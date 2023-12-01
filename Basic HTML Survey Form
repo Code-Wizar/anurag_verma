@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>First Semester Experience Survey</title>
+  <style>
+    /* Basic styling for the table */
+    table {
+      border-collapse: collapse;
+      width: 80%;
+      margin: 20px auto;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+    tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+    h1 {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <h1>First Semester Experience Survey - LPU</h1>
+  <form action="submit_survey.php" method="post"> <!-- Replace "submit_survey.php" with your form submission URL -->
+    <table>
+      <tr>
+        <th>Questions</th>
+        <th>Rating (1-5)</th>
+      </tr>
+      <tr>
+        <td>1. How would you rate the overall learning experience?</td>
+        <td><input type="number" name="q1" min="1" max="5" required></td>
+      </tr>
+      <tr>
+        <td>2. Were you able to make meaningful connections with your peers?</td>
+        <td><input type="number" name="q2" min="1" max="5" required></td>
+      </tr>
+      <tr>
+        <td>3. How often did you engage in collaborative projects or group work?</td>
+        <td><input type="number" name="q3" min="1" max="5" required></td>
+      </tr>
+      <tr>
+        <td>4. Did any particular course challenge or excite you the most? If yes, which one?</td>
+        <td><textarea name="q4" rows="2" cols="30" required></textarea></td>
+      </tr>
+      <tr>
+        <td>5. Rate the accessibility of academic support services (tutoring, counseling, etc.).</td>
+        <td><input type="number" name="q5" min="1" max="5" required></td>
+      </tr>
+      <tr>
+        <td>6. How innovative were the teaching methods employed in your classes?</td>
+        <td><input type="number" name="q6" min="1" max="5" required></td>
+      </tr>
+      <tr>
+        <td>7. Describe one memorable or surprising aspect of your first semester.</td>
+        <td><textarea name="q7" rows="2" cols="30" required></textarea></td>
+      </tr>
+      <tr>
+        <td>8. Did any extracurricular activity significantly contribute to your learning experience? If yes, which one?</td>
+        <td><textarea name="q8" rows="2" cols="30" required></textarea></td>
+      </tr>
+      <tr>
+        <td>9. How effectively did the courses connect to real-world applications?</td>
+        <td><input type="number" name="q9" min="1" max="5" required></td>
+      </tr>
+      <tr>
+        <td>10. Rate the level of student engagement in campus events and initiatives.</td>
+        <td><input type="number" name="q10" min="1" max="5" required></td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <input type="submit" value="Submit">
+          <input type="reset" value="Reset">
+        </td>
+      </tr>
+    </table>
+  </form>
+</body>
+</html>
