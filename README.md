@@ -1,2 +1,3 @@
 # anurag_verma
-It is my first Github Repository Author -Uvraj Verma
+It is my first Github Repository
+Author - Uvraj Verma
